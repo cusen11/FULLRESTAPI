@@ -23,7 +23,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGJkZTQ0ZjdlODZhNDRlMTg3NThlZTUiLCJpYXQiOjE2MjMwNTc0ODh9.s4bwm79ny-Iy4NdWTVxo_ATktzHiEF6qzZGU5oHy9SY
 
 {
-    "title": "Dạo 123",
+    "title": "Dạo 123 để xóa",
     "description": "Chơi chơi Chơi chơi Chơi chơi Chơi chơi Chơi chơi Chơi chơi làdây là",
     "link": "Shopee.com",
     "status":"Học xong"
@@ -34,5 +34,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGJkZ
 GET http://localhost:5000/api/posts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGJkZTQ0ZjdlODZhNDRlMTg3NThlZTUiLCJpYXQiOjE2MjMwNTc0ODh9.s4bwm79ny-Iy4NdWTVxo_ATktzHiEF6qzZGU5oHy9SY
 
+###
+PUT http://localhost:5000/api/posts/60bdebe66bd7681eb8087435
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGJkZTQ0ZjdlODZhNDRlMTg3NThlZTUiLCJpYXQiOjE2MjMwNTc0ODh9.s4bwm79ny-Iy4NdWTVxo_ATktzHiEF6qzZGU5oHy9SY
 
+{
+    "title": "Dạo 123 update",
+    "description": "Chơi chơi update",
+    "link": "https://Shopee.com",
+    "status":"Học xong"
+}
+###
+DELETE  http://localhost:5000/api/posts/60be40f70e5df80ae4233e13
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGJkZTQ0ZjdlODZhNDRlMTg3NThlZTUiLCJpYXQiOjE2MjMwNTc0ODh9.s4bwm79ny-Iy4NdWTVxo_ATktzHiEF6qzZGU5oHy9SY
 
